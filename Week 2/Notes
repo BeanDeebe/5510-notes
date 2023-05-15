@@ -5,4 +5,17 @@ Android Architecture
   + Reference Code & Design
   + Developer APIs and Tools
 
-- 
+ Android platform built on a Linux Kernel.
+ 
+ Each app runs its own instance of ART (Android Runtime).
+
+The stack looks like this, top down:
+ + System Apps
+    + Dialer / Email / Calendar / Camera / etc.
+ + Java API Framework
+    + View System, Resource Manager, Notif Manager, Activity Manager, Content Providers
+ + Native C / C++ Libraries && Android Runtime
+ + Hardware Abstraction Layer
+    + Audio / Bluetooth / Camera / Sensors libraries
+ + Linux Kernel
+ + Power Management.
