@@ -1,0 +1,21 @@
+Fragments
+    + Reusable UI components for android apps.
+    + Object oriented thinking
+        + Encapsulation and reusability
+        + Subclassing (extend)
+    + Android Thinking:
+        1. Reusable portion of your app's UI
+        2. Own layout, own lifecycle, handles own input events.
+        3. Fragments cannot live on their own.
+        4. Hosted by an activity of another fragment.
+        5. Fragment's view hierarchy becomes part of the host's view hierarchy.
+    
+    Example:
+
+        class ExampleFragment extends Fragment {
+            public ExampleFragment() {
+                super(R.layout.example_fragment);
+            }
+        }
+
+    

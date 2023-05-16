@@ -1,0 +1,14 @@
+Tasks and the Back stack
+    + Task: a collection of activities that are part of an application.
+    + Stack: Activities that are arranged in the order they are activated by the user.
+
+Principles of Navigation in Android
+    + Fixed start destination
+        + This is the first screen a user sees when launching app.
+        + Last screen they see when pressing the back button.
+    + Nav state is rep'd as a stack of destinations
+        + Upon new launch, a new task is created for the user.
+        + This becomes the base destination for the Back Stack.
+        + All future activities get pushed onto this stack. When the back button is hit, the top activity is destroyed.
+
+The Back stack operates on a LIFO object structure.
