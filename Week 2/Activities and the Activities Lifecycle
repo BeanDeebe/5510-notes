@@ -1,0 +1,48 @@
+Activities and the Activity Lifecycle
+
+- Introduction
+    + Activity is the primary building block of Android Apps
+    + Activity represents the screen of an app.
+    + These provide entry points into the application.
+    + Instead of a main() method like in Java, you instead specify which Activity is an entry point for your app and 
+      that is what gets shown to the user upon opening the application.
+    + How do we communicate throughout all of these different activities?
+    + **important** mobile apps can be interrupted at ANY time, for ANY reason. 
+        + Android activities have a lifecycle. This varies the states that activities go through.
+        + THis way, we can prep the app for diff stages that it'll go through with different event handlers.
+- Managing the Activity Lifecycle
+    + Sequence of activity states:
+        1. Created
+        2. Started
+        3. Resumed
+        4. Paused
+        5. Stopped
+        6. Destroyed
+    onCreate(): Perform setup that should only happen once for entire life of the activity. The activity is in the 
+    created state after this method executes.
+   
+    onStart(): Prepare the activity to enter the foreground and become interactive. This method is where you should 
+    initialize the code that maintains the UI.
+   
+    onResume(): The activity is in the foreground, and is ready for users to interact with it. The activity stays in 
+    this state until something happens to take the focus away from the app, such as a phone call or the user hitting 
+    the back button.
+   
+    onPause(): The activity has been interrupted, so it enters the paused state. The activity no longer has focus, 
+    so use this callback to stop anything that shouldn’t be happening when the app doesn’t have focus (for example, 
+    the timer or music playing for a game). This needs to have a quick return! It’s not the right place to save 
+    application state.
+
+    onStop(): The activity enters the stopped state when it no longer is visible on the screen. In Android API Level 
+    23 or lower, an activity goes from the paused to stopped state immediately; in API Level 24 and higher, it is 
+    possible for a window, e.g. a dialog, to partially cover another activity, so an activity might stay in the 
+    paused state longer. This is where your activity should perform more CPU intensive and potentially 
+    longer running operations, such as persisting the state of the UI and other data operations.
+
+    onDestroy(): The activity enters the destroyed state when the system is killing the process running this activity, 
+    when finish() is called, or when the device undergoes an orientation change (in this case, onCreate() will be 
+    called immediately, to allow the activity to reconfigure in response to the orientation change). The activity 
+    should release any resources it hasn’t already released.
+
+
+    * It is important with any of these callbacks to call the 'super' method before doing anything custom.
