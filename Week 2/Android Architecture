@@ -19,3 +19,18 @@ The stack looks like this, top down:
     + Audio / Bluetooth / Camera / Sensors libraries
  + Linux Kernel
  + Power Management.
+
+ Activity Lifecycle States
+   Lifetime
+      + onCreate (setup "global" state)
+         + where all large operations should happen (data gathering, etc.)
+      + onDestroy (release all major resources)
+   Visible Lifetime ("behind glass door")
+      + onStart (register BroadcastReceivers)
+         + getting ready to interact with the user
+      + onStop (unregister)
+         + means you're not visible
+   Foreground Lifetime (frequent switching)
+      + onResume (user interacting, lightweight code)
+      + onPause (commit changes, lightweight code)
+         + means you're not focused.
