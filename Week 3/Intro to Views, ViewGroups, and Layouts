@@ -1,0 +1,33 @@
+Intro to Views, ViewGroups, and Layouts
+
+Why use Views?
+  - Screen sizes
+  - Portrait & Landscape
+
+Views
+  - android.view.View -- parent of every UI item.
+  - Widgets (AKA components) - Button, TextView, EditText, etc.
+  - ViewGroup (AKA Composite View) -> LinearLayout
+      - LinearLayout -> RadioGroup, ActionMenuView, NumberPicker, etc.
+
+Layouts
+  - ViewGroup -> LinearLayout
+  - Constraint Layout - constraint settings applied to each child view
+  - LinearLayout - single row or column, with weighted size
+  - AbsoluteLayout - specific X,Y coords. Not flexible
+  - RelativeLayout - positioned relative to one another and the the container, totally flexible.
+  - FrameLayout - area for (usually) a single view. Multiples will stack. Think gravity.
+  - CoordinatorLayout - superpowered FrameLayout, including motion.
+  - TableLayout -> TableRow -> view object for each cell.
+  - GridLayout - child views cover multiple cells X & Y. space view or margins.
+
+View Hierarchy
+- Each view has rectangular bounds
+- Each child is within parent's bounds
+- Layout Inspector
+
+Rendering Efficiently
+- Reduce overdraw - minimize redrawing of same pixels.
+- Performance and View Hierarchies - efficient layout & measurement, avoid double taxation
+- Analyize with "Profile GPU Rendering" tool
+
