@@ -1,0 +1,33 @@
+Material Design
+
+Android vs iOS 
+iOS - apps conform to a set of technical and UX requirements... consistency!
+
+Android - apps can implement their own interaction idioms
+    creative interfaces
+    differences can be jarring
+
+Goals of material Design
+    1. Create a visual language that synthesizes classic principles of good design with the innovation and
+    possibility of technology  and science.
+    2. Develop a single underlying system that allows for a unified experience across platforms and device sizes. 
+    Mobile precepts are fundamental, but touch, voice, mouse, and keyboard are all first-class input methods.
+
+More Devices increases need for consistency
+    Google Watch
+    Google Home
+    Google Glass
+
+Primary Principles
+    1. Material is the metaphor.
+        Inspired by real-world materials and physics.
+        Objects have an x-y-z location, a z-position, and a depth.
+        Ambient light creates soft, directional shadows.
+    2. Bold, graphical, and intentional.
+        Visually consistent across apps.
+        Provide heirarchy.
+        meaning.
+        focus.
+    3. Motion provides meaning
+        Motion is important and meaningful.
+        Must be in service of the user's intention, not just for fun / whimsicality.
