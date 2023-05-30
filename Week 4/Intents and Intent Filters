@@ -1,0 +1,9 @@
+Intents and Intent Filters
+
+Intent - message to request action from another app component
+Intent Filter - what implicit intents your app can receive
+
+Impicit / Explicit Intents
+
+Explicit - specify qualified class name
+Implicit - Android chooses the app
