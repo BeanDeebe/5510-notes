@@ -6,4 +6,10 @@ Intent Filter - what implicit intents your app can receive
 Impicit / Explicit Intents
 
 Explicit - specify qualified class name
+
 Implicit - Android chooses the app
+    Action - what an app can do
+    data - data to be acted upon & MIME type
+    category - kind of component to handle intent
+    Example: clicking a URL
+    **could get some surprises as what is handling your intent**
