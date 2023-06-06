@@ -1,0 +1,25 @@
+Threads
+
+Android Threads
+1. Never, ever, ever block the Main/UI thread.
+2. Do not access the UI from a non-UI thread.
+
+- Android UI toolkit is NOT thread safe.
+- Main thread is blocked if it takes too long to complete something and displays an error message.
+    - could be accessing a file on the file network or complex computations.
+
+Process Heirarchy: Which Process Gets Killed
+1. Foreground Process (most important, req'd for what the user is doing right now)
+    Running an Activity the user is interacting with.
+    BroadcastReceiver that is currently running
+    Service currently excecuting code in a call block.
+2. Visible Process
+    Activity visible on screen ,but not active (aka onPause() has been called).
+    A service is running in the foreground.
+    Service that manages something the user might be aware of.
+3. Service Process
+    Hosting a service that is started
+    Usually not as visible to users, but doing something the user cares about (uploading / downloading somethign).      
+4. Cached Process
+    Not currently active, but could become active soon.
+
