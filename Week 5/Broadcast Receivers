@@ -87,4 +87,16 @@ public class AirplaneModeReceiver extends BroadcastReceiver {
     }
 }
 
-...that's it!!      
+-----
+
+(in SystembootReceiver.java)
+
+public class SystembootReceiver extends BroadcastReceiver {
+    @Override
+    public void onReceiver(Context context, Intent intent) {
+        //Implicit example from #1 option above.
+        if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
+            Toast.makeText(context, "System boot completed", Toast.LENGTH_LONG).show();
+        }
+    }
+}
