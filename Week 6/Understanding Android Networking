@@ -1,0 +1,14 @@
+Power Consumption
+    Wifi- uses less power for data transfer
+    Cellular- uses more power. Usually automatically disabled when connected to Wifi
+Speed
+    Wifi- typically faster than Cellular
+    Cellular- slower than wifi, speeds depend on carrier and network (3G vs 5G etc)
+Cost
+    Wifi- usually free
+    cellular- metered (user has a plan, network can then throttle that plan)
+Availability
+    Wifi- More private, familiar locations. Useful when in one place for awhile // smaller area of service.
+    Cellular- available in public places where wifi isn't around. Stay connected while traveling.// larger area of service
+
+
