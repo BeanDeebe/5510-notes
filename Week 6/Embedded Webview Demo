@@ -1,0 +1,5 @@
+Want to keep users inside of app because if they leave they might not come back!
+
+- don't let users enter in their own URL to load a webview... this could be a bad idea as the user can redirect to their own site for nefarious purposes.
+- if the user clicks on another link inside the webview, Android will open that link up how it's used to -- in the chrome app or similar. 
+- to avoid this we need to use a Webview Client to the webview. THis will override the default behavior for URLs.

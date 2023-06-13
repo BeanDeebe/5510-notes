@@ -1,0 +1,6 @@
+- most important things we need to know how to do: 
+    - connect to URL with HTTP connection to either put or get data.
+- Java provides all networking classes we need.
+- All entworking calls need to be made asynchronously to keep UI working responsively.
+    - Create a new thread to perform this operation.
+    
